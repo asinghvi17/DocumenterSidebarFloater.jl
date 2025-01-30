@@ -1,0 +1,13 @@
+name = "DocumenterSidebarFloater"
+uuid = "bdb614c5-346b-45e3-b495-fa96c9976df2"
+authors = ["Anshul Singhvi <anshulsinghvi@gmail.com> and contributors"]
+version = "0.1.0"
+
+[compat]
+julia = "1.6.7"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
