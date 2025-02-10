@@ -30,7 +30,6 @@ function Documenter.Selectors.runner(::Type{FloaterProcessing}, doc::Documenter.
 
     # For each page, insert a code block at the bottom representing `@sidebarfloater`
     for (filename, page) in doc.blueprint.pages
-        if 
         MarkdownAST.insert_after!(
             last(page.mdast.children),
             MarkdownAST.@ast MarkdownAST.CodeBlock(
