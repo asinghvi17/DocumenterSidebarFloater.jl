@@ -4,14 +4,17 @@ abstract type FloaterProcessing <: Documenter.Builder.DocumentPipeline end
 Documenter.Selectors.order(::Type{FloaterProcessing}) = 1.2
 
 """
-    struct FloaterConfig 
+    FloaterConfig(title, body; link = "", style = "tip")
+
 A configuration object for adding a sidebar floater to every page.
 
-# Fields
-- `link::String`  (default: `""`)
-- `style::String` (default: `"tip"`)
-- `title::String`
-- `body::String`
+## Extended help
+
+TODOs: 
+- [ ] Page ignore list
+- [ ] Page specific floaters (?)
+
+If you want any of these, open a Github issue (or better yet, PR it to the repo!)
 """
 struct FloaterConfig <: Documenter.Plugin
     link::String

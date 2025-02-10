@@ -7,6 +7,8 @@ import Markdown
 include("genericfloater.jl")
 include("buildstage.jl")
 
+export FloaterConfig
+
 # what has to happen here is:
 # 1. a documenter block that is a floater but with custom html that pops it out
 # 2. a documenter build stage that adds the floater to each page
