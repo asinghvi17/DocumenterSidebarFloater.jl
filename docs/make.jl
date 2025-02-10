@@ -10,10 +10,13 @@ makedocs(;
     format=Documenter.HTML(;
         canonical="https://asinghvi17.github.io/DocumenterSidebarFloater.jl",
         edit_link="main",
-        assets=String[],
+        assets=String["assets/popup.js"],
     ),
     pages=[
         "Home" => "index.md",
+    ],
+    plugins=[
+        DocumenterSidebarFloater.FloaterConfig("Commercial user?", "Click here for commercial support!"; link = "https://juliahub.com"),
     ],
 )
 

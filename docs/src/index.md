@@ -12,3 +12,4 @@ Documentation for [DocumenterSidebarFloater](https://github.com/asinghvi17/Docum
 ```@autodocs
 Modules = [DocumenterSidebarFloater]
 ```
+
